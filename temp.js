@@ -60,10 +60,11 @@ async function addNonce(elements) {
 
 // solution.js
 
-function showTruth(data) {
+function showTruth(data,button) {
   const vid = document.getElementById("vid");
   const video = document.getElementById("video");
   vid.style.display = "block";
+button.remove();
   /* SOMETHING IS HERE -> edf2192208 <- HERE IS SOMETHING */
   if (!data) {
     video.style.display = "flex";
