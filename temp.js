@@ -1,12 +1,8 @@
 import crypto from "crypto";
 const initial = "ctf{cool_cat_flag_1_fou_nd}";
 const final = "ctf{co_ol_catt_flag_2_fou_nd_>.<_game_over}";
-const fixNonce = () => {
 
-};
-for (let i = 8; i > 0;i--) 
-console.log(crypto.randomBytes(5).toString("hex"));
-
+for (let i = 8; i > 0; i--) console.log(crypto.randomBytes(5).toString("hex"));
 // image = eeecff8e68
 // image name = 05c3ba05f3
 // phase 2 key = a291bb10c2
@@ -77,7 +73,9 @@ function showTruth(data) {
 }
 
 function getRandomSolution() {
-  const solution = new Array(6).map((_, i) => i ? "solution" + i + 1 + ".mp4" : "solution.mp4");
-  
+  const solution = new Array(6).fill(0).map((_, i) =>
+    i ? "solution" + (i + 1) + ".mp4" : "solution.mp4"
+  );
+
   return solution[Math.round(Math.random() * solution.length)];
 }
