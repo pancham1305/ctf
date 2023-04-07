@@ -71,7 +71,13 @@ function showTruth(data) {
   /* SOMETHING IS HERE -> edf2192208 <- HERE IS SOMETHING */
   if (!data) {
     video.style.display = "flex";
-    video.src = ["solution.mp4", "solution2.mp4"][Math.round(Math.random())];
+    video.src = getRandomSolution();
     video.play();
   }
+}
+
+function getRandomSolution() {
+  const solution = new Array(6).map((_, i) => i ? "solution" + i + 1 + ".mp4" : "solution.mp4");
+  
+  return solution[Math.round(Math.random() * solution.length)];
 }
