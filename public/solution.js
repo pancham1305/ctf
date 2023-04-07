@@ -1,3 +1,5 @@
+// when life gives you 6 characters, make a full stack web app with them
+
 [][
   (![] + [])[+[]] +
     (![] + [])[!+[] + !+[]] +
