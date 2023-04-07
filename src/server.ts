@@ -14,8 +14,10 @@ app.set("view engine", "ejs");
 app.get("/", (_, res) => {
   res.render("index");
 });
-app.get("/image", (req, res) => {
-  res.sendFile("image.tar.gz");
+app.get("/image.tar.gz", (req, res) => {
+  const path = join(process.cwd(),"./public/image.tar.gz");
+  console.log(path);
+  res.sendFile(path);
 });
 app.post("/", (req, res) => {
   const { key } = req.body ;
@@ -46,11 +48,15 @@ app.get("/nonce", async (_, res) => {
     return res.json({ nonces });
 })
 
+app.get("/solution",async(_,res) => {
+  res.render("solution");
+})
+
 app.post("/nonce", async (req, res) => {
     const { nonce } = req.body;
     if (nonce != "a291bb10c2") {
         res.json({
-            solution : "/solution"
+            solution : "https://ctf.pancham1305.repl.co/solution"
         })
     } else {
         res.json({

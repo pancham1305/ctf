@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded',async () => {
 
 async function fixNonce(nonce) {
   // use `await fixNonce(nonce)` to run this function in ur DevTool Console
-  // how does a devtool look like? here is an img -> 
+  // how does a devtool look like? here is an img -> https://ctf.pancham1305.repl.co/devtools
   return await fetch("/nonce", {
     method: "POST",
     body: JSON.stringify({
