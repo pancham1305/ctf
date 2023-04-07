@@ -13,10 +13,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Cool Catt</title>
+    <title id="title">Cool Catt</title>
   </head>
-  <body>
-    <h1 class="h">
+  <body id="body">
+    <h1 class="h" id="head">
         <i class="letter" style="--i:1">I</i>
         &nbsp;
         <i class="letter" style="--i:-1">A</i>
@@ -34,13 +34,14 @@
         <i class="letter" style="--i:6">T</i>
         <i class="letter" style="--i:-6">T</i>
     </h1>
-    <img src="05c3ba05f3.jpg" alt="I am a cool catt" />
-    <a href="/image">Get Image</a>
-    <form action="/" method="post" class="hide" style="display: none;">
-      <input type="text" class="text" name="key" />
-      <button type="submit" class="submit" value="">
+    <img id="img" src="05c3ba05f3.jpg" alt="I am a cool catt" />
+    <a id="getimg" href="/image">Get Image</a>
+    <form action="/" method="post" id="hide" class="hide" style="display: none;">
+      <input id="text" type="text" class="text" name="key" />
+      <button type="submit" class="submit" value="" id="sub">
         <i class="d fa fa-solid fa-paper-plane"></i>
       </button>
     </form>
+    <script src="index.js"></script>
   </body>
 </html>

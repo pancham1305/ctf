@@ -109,6 +109,7 @@ a {
     border-radius: 4px;
     color: #fff;
     font-size: 30px;
+    /* f90740a936 */
     font-weight: 600;
     cursor: pointer;
     transition: 500ms;
@@ -141,6 +142,7 @@ a:hover {
     0% {
         transform: translateX(-100px);
     }
+    /* 74180c5872 */
     100% {
         transform: translateX(0px);
     }

@@ -1,0 +1,38 @@
+#vid {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html {
+    background: #000;
+    width:100%;
+    height:100%;
+}
+
+body {
+    background-image: url("a8ecf2d171.jpg");
+    background-size: cover;
+    background-position: center;
+    /* adb54f64bf */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.con {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* 3c1c3f81fb */
+    align-items: center;
+    flex-direction: column;
+    color:white;
+    backdrop-filter:sepia(100%) hue-rotate(180deg) brightness(0.5) blur(2px);
+}
+
